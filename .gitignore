@@ -29,5 +29,6 @@ frontend/.yarn-integrity
 
 # Next.js build output
 frontend/src/typescript/.next
+/src/typescript/.next
 
 # --- MIDDLEWARE ---
