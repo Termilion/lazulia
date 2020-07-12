@@ -1,5 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&display=swap');
 
+.like {
+    height: 50px;
+    min-width: 50px;
+    width: fit-content;
+    border-radius: 25px;
+    border: solid;
+    border-color: gray;
+    border-width: 0.045rem;
+    background-color: whitesmoke;
+    color: white;
+    padding: 0px;
+    position: absolute;
+    float: right;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.like:hover {
+    transform: scale(1.15,1.15);
+    animation: jiggle 0.5s infinite linear;
+    background-color: white;
+  }
+
+@keyframes jiggle {
+    0% {transform: rotate(0deg) scale(1.15,1.15);}
+    50% {transform: rotate(4deg) scale(1.15,1.15);}
+    100% {transform: rotate(-4deg) scale(1.15,1.15)}
+  }
+
+.title {
+    display: inline-block;
+}
+
+.creator {
+    float: right;
+    color: darkgray;
+}
+
+.date {
+    float: right;
+    margin-left: 20px;
+    color: darkgray;
+}
 
 .expandIcon {
     margin-right: 50px;
