@@ -5,6 +5,7 @@
 
 .navItem {
     color: white;
+    margin-right: 25px;
 }
 
 .navItem:hover {
@@ -73,3 +74,15 @@
     
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.login {
+    background-color: skyblue;
+    color: darkslategray;
+    border-radius: 5px;
+}
+
+.login:hover {
+    background-color: lightskyblue;
+    color: slategray;
+}
+

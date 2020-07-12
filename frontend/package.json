@@ -1,40 +1,48 @@
 {
-  "name": "lazulia",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next ./src/typescript"
-  },
-  "repository": "git+https://github.com/Termilion/lazulia.git",
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Termilion/lazulia/issues"
-  },
-  "homepage": "https://github.com/Termilion/lazulia#readme",
+  "name": "lazulia_new",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "@types/mongodb": "^3.5.25",
-    "@types/next": "^9.0.0",
-    "@types/react": "^16.9.41",
-    "@types/webpack-env": "^1.15.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
     "bootstrap": "^4.5.0",
-    "create-next-app": "^9.4.4",
-    "mongodb": "^3.5.9",
-    "next": "^9.4.4",
-    "prop-types": "^15.7.2",
-    "raw-loader": "^4.0.1",
     "react": "^16.13.1",
-    "react-bootstrap": "^1.0.1",
+    "react-bootstrap": "^1.2.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
-    "url-loader": "^4.1.0"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-use-auth": "^0.7.5",
+    "typescript": "^3.9.6"
   },
-  "devDependencies": {
-    "@types/node": "^14.0.14",
-    "typescript": "^3.9.5"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
