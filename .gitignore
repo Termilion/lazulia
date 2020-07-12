@@ -32,3 +32,4 @@ frontend/src/typescript/.next
 /src/typescript/.next
 
 # --- MIDDLEWARE ---
+middleware/app.cfg

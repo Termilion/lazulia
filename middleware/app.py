@@ -17,7 +17,10 @@ host = config.get("mongodb", "host")
 port = config.get("mongodb", "port")
 db = config.get("mongodb", "db")
 
-mongodbURI = "mongodb://" + host + ":" + port + "/" + db
+username = config.get("mongodb", "username")
+password = config.get("mongodb", "password")
+
+mongodbURI = "mongodb://%s:%s@%s:%s/%s" % (username, password, host, port, db)
 
 flaskHost = config.get("flask", "host")
 flaskPort = config.get("flask", "port")
@@ -58,6 +61,7 @@ def addTechPost():
         "visible": request.form["visible"] == "true"
     }
     mongo.db.tech.insert_one(data)
+    return ""
 
 @app.route("/addOtherPost/", methods=["POST"])
 def addOtherPost():
@@ -73,6 +77,7 @@ def addOtherPost():
         "visible": request.form["visible"] == "true"
     }
     mongo.db.other.insert_one(data)
+    return ""
 
 if __name__ == '__main__':
     app.run(host=flaskHost, port=flaskPort)
